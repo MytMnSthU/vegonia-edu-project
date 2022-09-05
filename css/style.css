@@ -22,6 +22,7 @@
 /*   1(c) banner */
 /*   1(d) counter */
 /* 2. About */
+/* 3. Faculty */
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -100,26 +101,25 @@ body {
 @keyframes fadeout {
     0% {
         opacity: 0;
-        transform:  rotateX(230deg) translateY(-300px);
+        transform: rotateX(230deg) translateY(-300px);
     }
-    25%{
+    25% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
-        transform:  rotateX(0deg) translateY(0px);
-
+        transform: rotateX(0deg) translateY(0px);
     }
 }
 
 .vgn-header__banner-bg,
-.vgn-header__banner-wave  {
+.vgn-header__banner-wave {
     position: absolute;
     left: 0;
     bottom: -1px;
 }
 
-.vgn-header__banner-bg{
+.vgn-header__banner-bg {
     width: 45%;
 
     z-index: 1;
@@ -134,17 +134,17 @@ body {
 /* End Banner */
 
 /* Start Counter */
-.vgn-header__counter-icon{
+.vgn-header__counter-icon {
     background-image: var(--primary-gradient);
     color: transparent;
     background-clip: text;
 }
 
-@media (max-width: 575.98px) { 
-    .vgn-header__counter-number{
+@media (max-width: 575.98px) {
+    .vgn-header__counter-number {
         font-size: 18px;
     }
-    .vgn-header__counter-txt{
+    .vgn-header__counter-txt {
         font-size: 14px;
     }
 }
@@ -152,11 +152,93 @@ body {
 
 /* End Header */
 
-
 /* Start About Section */
-.vgn-about__img-container{
+.vgn-about__img-container {
     width: 90%;
     max-width: 400px;
 }
-
 /* End About Section */
+
+/* Start Faculty Section */
+.vgn-faculty {
+    background-image: var(--primary-gradient);
+
+    position: relative;
+}
+
+.vgn-faculty__wave {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+}
+
+.vgn-faculty__wave--stick-top {
+    top: 0;
+    transform: rotateX(180deg);
+}
+.vgn-faculty__wave--stick-bottom {
+    bottom: 0;
+    transform: rotateY(180deg);
+}
+
+.vgn-faculty__container {
+    padding-top: 15em !important;
+}
+
+.vgn-faculty__card {
+    width: 200px;
+    height: 250px;
+
+    perspective: 1000px;
+}
+
+.vgn-faculty__card-inner {
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    /* transform: rotateY(-35deg) ; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.vgn-faculty__card-front,
+.vgn-faculty__card-back {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.vgn-faculty__card-back {
+    transform: rotateY(-180deg);
+}
+
+.vgn-faculty__img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.vgn-faculty__card:hover .vgn-faculty__card-inner {
+    transform: rotateY(180deg);
+}
+/* .vgn-faculty__card:hover .vgn-faculty__card-back{
+    transform: rotateY(180deg);
+} */
+
+@media (max-width: 575.98px) {
+    .vgn-faculty__container {
+        padding-top: 7em !important;
+    }
+}
+/* End Faculty Section */
