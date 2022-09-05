@@ -23,6 +23,8 @@
 /*   1(d) counter */
 /* 2. About */
 /* 3. Faculty */
+/* 4. Pricing */
+/* 5. Location */
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -201,7 +203,6 @@ body {
     transition: transform 0.3s ease;
     /* transform: rotateY(-35deg) ; */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-
 }
 
 .vgn-faculty__card-front,
@@ -242,3 +243,67 @@ body {
     }
 }
 /* End Faculty Section */
+
+/* Start Pricing Section */
+.vgn-pricing {
+    background-image: var(--primary-gradient);
+}
+
+.vgn-pricing__img-container {
+    width: 180px;
+    height: 180px;
+
+    position: relative;
+    margin: auto;
+}
+
+.vgn-pricing__price,
+.vgn-pricing__bg {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.vgn-pricing__price {
+    z-index: 2;
+    line-height: 180px;
+    font-size: 2.5rem;
+}
+/* End Pricing Section */
+
+/* Start Location Section */
+.vgn-loc {
+    background-image: var(--primary-gradient);
+}
+
+.vgn-loc__parent {
+    overflow: hidden;
+    perspective: 1000px;
+}
+.vgn-loc__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.vgn-loc__card {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+    transform: rotateY(110deg);
+}
+
+.vgn-loc__parent:hover .vgn-loc__card {
+    transform: rotateY(0deg);
+}
+/* End Location Section */
