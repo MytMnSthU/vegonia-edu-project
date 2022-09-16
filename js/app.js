@@ -50,6 +50,8 @@ function drawChart() {
 
     var options = {
         title: "International Students",
+        width: 400,
+        height:300
     };
 
     var chart = new google.visualization.PieChart(
