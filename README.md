@@ -16,9 +16,9 @@ Access my site at [Vegonia University](https://merry-crisp-05f17a.netlify.app/)
 
 ## Technologies
 I used
-    - Semantic HTML
-    - CSS architecture BEM
-    - CSS custom styles
-    - Vanilla JavaScript
-    - Google Chart API
-    - Bootstrap v5.2
+- Semantic HTML
+- CSS architecture BEM
+- CSS custom styles
+- Vanilla JavaScript
+- Google Chart API
+- Bootstrap v5.2
