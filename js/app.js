@@ -59,7 +59,7 @@ function drawChart() {
 // Start Scroll Animation
 window.addEventListener("scroll", function () {
    let scrolltop = this.document.documentElement.scrollTop;
-   console.log(scrolltop);
+   // console.log(scrolltop);
 
    let aboutcontent = this.document.getElementById("aboutcontent");
    let aboutimg = this.document.getElementById("aboutimg");

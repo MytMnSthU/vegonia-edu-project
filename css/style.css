@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 
 :root {
-   --primary-color: #696eff;
-   /* --primary-color: var(--bs-purple); */
    --primary-color: #333;
-   --secondary-color: #f8acff;
    --secondary-color: #666;
-   /* --secondary-color: steelblue; */
    --primary-gradient: linear-gradient(
       to right,
       var(--secondary-color),
