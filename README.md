@@ -5,8 +5,8 @@ This is a simple landing page responsive template for education
 Access my site at [Vegonia University](https://merry-crisp-05f17a.netlify.app/)
 
 ## Table of contents
--[Screenshots](#screenshots)
--[Teachnologies](#technologies)
+- [Screenshots](#screenshots)
+- [Teachnologies](#technologies)
 
 
 ## Screenshots
