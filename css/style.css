@@ -141,6 +141,7 @@ body {
    background-image: var(--primary-gradient);
    color: transparent;
    background-clip: text;
+   -webkit-background-clip: text;
 }
 
 @media (max-width: 575.98px) {
